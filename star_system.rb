@@ -25,4 +25,10 @@ class StarSystem
    return @planets.max_by {|planet| planet.diameter}
   end
   
+  def get_smallest_planet
+    return @planets.min_by {|planet| planet.diameter}
+   end
+   
+
+
 end
