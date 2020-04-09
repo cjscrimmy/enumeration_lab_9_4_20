@@ -6,5 +6,9 @@ class StarSystem
     @planets = planets
   end
 
-    
+  def get_planets_count
+    return @planets.count
+  end
+
+
 end
