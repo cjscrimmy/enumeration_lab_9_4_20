@@ -21,9 +21,8 @@ class StarSystem
     return found_planet
   end 
 
-  
-
-
-
+  def get_largest_planet
+   return @planets.max_by {|planet| planet.diameter}
+  end
   
 end
