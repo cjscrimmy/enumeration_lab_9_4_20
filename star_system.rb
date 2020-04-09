@@ -30,8 +30,18 @@ class StarSystem
    end
    
    def get_planets_with_no_moons
-    
-    return @planets.find_all {|planet| planet.number_of_moons == 0}
+     return @planets.find_all {|planet| planet.number_of_moons == 0}
    end 
+
+   def get_planets_with_more_moons(moons)
+    planet_with_more_moons = []
+    #planet_with_4moons = @planets.find_all {|planet| planet.number_of_moons > moons} 
+    
+    @planets.find_all do |planet.number_of_moons >= moons| 
+      planets_with_more_moons << planet.name
+    end
+    return planets_with_more_moons
+   end 
+
 
 end
