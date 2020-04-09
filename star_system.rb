@@ -10,5 +10,7 @@ class StarSystem
     return @planets.count
   end
 
-
+  def planet_names
+    return @planets.map {|planet| planet.name}
+  end
 end
